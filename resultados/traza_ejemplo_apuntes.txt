@@ -1,0 +1,54 @@
+
+=== Primer ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      15 KB -> OK                     | P1 15 | libre 85 |
+A P2       1 KB -> OK                     | P1 15 | P2 1 | libre 84 |
+A P3       4 KB -> OK                     | P1 15 | P2 1 | P3 4 | libre 80 |
+A P4       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | libre 79 |
+A P5      20 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | libre 59 |
+A P6       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | libre 58 |
+A P7      13 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | libre 45 |
+A P8      45 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P1             -> OK                     | libre 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P3             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P5             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | P7 13 | P8 45 |
+L P7             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | libre 13 | P8 45 |
+A P9      12 KB -> OK                     | P9 12 | libre 3 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | libre 13 | P8 45 |
+
+=== Mejor ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      15 KB -> OK                     | P1 15 | libre 85 |
+A P2       1 KB -> OK                     | P1 15 | P2 1 | libre 84 |
+A P3       4 KB -> OK                     | P1 15 | P2 1 | P3 4 | libre 80 |
+A P4       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | libre 79 |
+A P5      20 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | libre 59 |
+A P6       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | libre 58 |
+A P7      13 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | libre 45 |
+A P8      45 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P1             -> OK                     | libre 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P3             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P5             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | P7 13 | P8 45 |
+L P7             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | libre 13 | P8 45 |
+A P9      12 KB -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | P9 12 | libre 1 | P8 45 |
+
+=== Peor ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      15 KB -> OK                     | P1 15 | libre 85 |
+A P2       1 KB -> OK                     | P1 15 | P2 1 | libre 84 |
+A P3       4 KB -> OK                     | P1 15 | P2 1 | P3 4 | libre 80 |
+A P4       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | libre 79 |
+A P5      20 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | libre 59 |
+A P6       1 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | libre 58 |
+A P7      13 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | libre 45 |
+A P8      45 KB -> OK                     | P1 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P1             -> OK                     | libre 15 | P2 1 | P3 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P3             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | P5 20 | P6 1 | P7 13 | P8 45 |
+L P5             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | P7 13 | P8 45 |
+L P7             -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | libre 20 | P6 1 | libre 13 | P8 45 |
+A P9      12 KB -> OK                     | libre 15 | P2 1 | libre 4 | P4 1 | P9 12 | libre 8 | P6 1 | libre 13 | P8 45 |
+
+Escenario: apuntes | memoria 100 KB | unidad 1 KB | 13 eventos | archivo datos/ejemplo_apuntes.txt
+Estrategia     Asignadas Rech.frag  Rech.esp  %Rechazo Util.prom FExt.prom FInt.prom  Rel.huec Rev.exito
+Primer ajuste          9         0         0     0.00%    49.62%    0.139    0.00KB     0.421      4.11
+Mejor ajuste           9         0         0     0.00%    49.62%    0.139    0.00KB     0.421      4.89
+Peor ajuste            9         0         0     0.00%    49.62%    0.149    0.00KB     0.421      4.89

@@ -1,0 +1,45 @@
+
+=== Primer ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      12 KB -> OK                     | P1 12 | libre 88 |
+A P2       5 KB -> OK                     | P1 12 | P2 5 | libre 83 |
+A P3      50 KB -> OK                     | P1 12 | P2 5 | P3 50 | libre 33 |
+A P4       5 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | libre 28 |
+A P5      20 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | libre 8 |
+A P6       8 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P1             -> OK                     | libre 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P3             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | P5 20 | P6 8 |
+L P5             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | libre 20 | P6 8 |
+A P7      18 KB -> OK                     | libre 12 | P2 5 | P7 18 | libre 32 | P4 5 | libre 20 | P6 8 |
+
+=== Mejor ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      12 KB -> OK                     | P1 12 | libre 88 |
+A P2       5 KB -> OK                     | P1 12 | P2 5 | libre 83 |
+A P3      50 KB -> OK                     | P1 12 | P2 5 | P3 50 | libre 33 |
+A P4       5 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | libre 28 |
+A P5      20 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | libre 8 |
+A P6       8 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P1             -> OK                     | libre 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P3             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | P5 20 | P6 8 |
+L P5             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | libre 20 | P6 8 |
+A P7      18 KB -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | P7 18 | libre 2 | P6 8 |
+
+=== Peor ajuste (memoria 100 KB, unidad 1 KB) ===
+inicio: | libre 100 |
+A P1      12 KB -> OK                     | P1 12 | libre 88 |
+A P2       5 KB -> OK                     | P1 12 | P2 5 | libre 83 |
+A P3      50 KB -> OK                     | P1 12 | P2 5 | P3 50 | libre 33 |
+A P4       5 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | libre 28 |
+A P5      20 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | libre 8 |
+A P6       8 KB -> OK                     | P1 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P1             -> OK                     | libre 12 | P2 5 | P3 50 | P4 5 | P5 20 | P6 8 |
+L P3             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | P5 20 | P6 8 |
+L P5             -> OK                     | libre 12 | P2 5 | libre 50 | P4 5 | libre 20 | P6 8 |
+A P7      18 KB -> OK                     | libre 12 | P2 5 | P7 18 | libre 32 | P4 5 | libre 20 | P6 8 |
+
+Escenario: quiz | memoria 100 KB | unidad 1 KB | 10 eventos | archivo datos/ejemplo_quiz.txt
+Estrategia     Asignadas Rech.frag  Rech.esp  %Rechazo Util.prom FExt.prom FInt.prom  Rel.huec Rev.exito
+Primer ajuste          7         0         0     0.00%    54.00%    0.108    0.00KB     0.473      3.43
+Mejor ajuste           7         0         0     0.00%    54.00%    0.080    0.00KB     0.473      3.86
+Peor ajuste            7         0         0     0.00%    54.00%    0.108    0.00KB     0.473      3.86

@@ -1,0 +1,84 @@
+escenario  unidad estrategia  tasa_rechazo_media  tasa_rechazo_desv  utilizacion_prom_media  frag_externa_prom_media  frag_interna_prom_kb_media  relacion_huecos_prom_media  revisados_exito_prom_media  revisados_rechazo_prom_media
+  E1_baja       1       best               0.011              0.003                   0.377                    0.234                       0.000                       0.708                       6.305                        11.717
+  E1_baja       1      first               0.012              0.003                   0.377                    0.250                       0.000                       0.710                       4.254                        11.811
+  E1_baja       1      worst               0.018              0.005                   0.372                    0.421                       0.000                       0.751                       6.528                        11.638
+  E1_baja       4       best               0.014              0.003                   0.375                    0.229                       6.367                       0.665                       5.823                        10.787
+  E1_baja       4      first               0.015              0.004                   0.374                    0.251                       6.362                       0.676                       4.094                        11.020
+  E1_baja       4      worst               0.023              0.006                   0.369                    0.418                       6.304                       0.745                       6.455                        11.127
+  E1_baja      16       best               0.039              0.007                   0.360                    0.209                      32.948                       0.559                       4.648                         8.542
+  E1_baja      16      first               0.041              0.007                   0.358                    0.241                      32.798                       0.589                       3.639                         8.670
+  E1_baja      16      worst               0.048              0.007                   0.351                    0.383                      32.276                       0.694                       6.013                         8.968
+ E2_media       1       best               0.115              0.011                   0.603                    0.394                       0.000                       0.567                      10.258                        13.836
+ E2_media       1      first               0.122              0.010                   0.593                    0.432                       0.000                       0.585                       6.260                        13.846
+ E2_media       1      worst               0.141              0.009                   0.569                    0.559                       0.000                       0.616                      10.560                        13.720
+ E2_media       4       best               0.130              0.011                   0.586                    0.371                      10.581                       0.486                       8.714                        12.464
+ E2_media       4      first               0.139              0.012                   0.577                    0.415                      10.490                       0.527                       5.829                        12.749
+ E2_media       4      worst               0.159              0.009                   0.553                    0.544                      10.244                       0.596                      10.201                        12.928
+ E2_media      16       best               0.210              0.014                   0.518                    0.246                      49.666                       0.332                       5.965                         9.348
+ E2_media      16      first               0.214              0.014                   0.511                    0.301                      49.185                       0.372                       4.726                         9.587
+ E2_media      16      worst               0.225              0.012                   0.492                    0.426                      47.851                       0.462                       8.523                         9.955
+  E3_alta       1       best               0.273              0.015                   0.719                    0.483                       0.000                       0.513                      12.888                        15.587
+  E3_alta       1      first               0.281              0.015                   0.701                    0.523                       0.000                       0.536                       7.606                        15.739
+  E3_alta       1      worst               0.299              0.011                   0.667                    0.615                       0.000                       0.570                      13.611                        15.694
+  E3_alta       4       best               0.292              0.014                   0.692                    0.436                      13.498                       0.400                      10.265                        13.821
+  E3_alta       4      first               0.296              0.012                   0.673                    0.483                      13.317                       0.445                       6.937                        14.154
+  E3_alta       4      worst               0.314              0.011                   0.640                    0.588                      13.044                       0.520                      12.809                        14.589
+  E3_alta      16       best               0.385              0.014                   0.588                    0.223                      58.484                       0.226                       6.458                        10.064
+  E3_alta      16      first               0.384              0.014                   0.577                    0.281                      57.896                       0.260                       5.389                        10.348
+  E3_alta      16      worst               0.390              0.012                   0.557                    0.387                      56.877                       0.323                      10.016                        10.740
+
+escenario  unidad estrategia           metrica  diferencia_media_vs_first  semillas_donde_gana_a_first  semillas
+  E1_baja       1       best      tasa_rechazo                    -0.0014                            9        10
+  E1_baja       1       best frag_externa_prom                    -0.0158                           10        10
+  E1_baja       1       best  utilizacion_prom                     0.0006                            8        10
+  E1_baja       1      worst      tasa_rechazo                     0.0064                            0        10
+  E1_baja       1      worst frag_externa_prom                     0.1708                            0        10
+  E1_baja       1      worst  utilizacion_prom                    -0.0046                            0        10
+  E1_baja       4       best      tasa_rechazo                    -0.0014                            7        10
+  E1_baja       4       best frag_externa_prom                    -0.0219                           10        10
+  E1_baja       4       best  utilizacion_prom                     0.0010                            8        10
+  E1_baja       4      worst      tasa_rechazo                     0.0073                            0        10
+  E1_baja       4      worst frag_externa_prom                     0.1666                            0        10
+  E1_baja       4      worst  utilizacion_prom                    -0.0050                            0        10
+  E1_baja      16       best      tasa_rechazo                    -0.0025                            9        10
+  E1_baja      16       best frag_externa_prom                    -0.0321                           10        10
+  E1_baja      16       best  utilizacion_prom                     0.0021                            8        10
+  E1_baja      16      worst      tasa_rechazo                     0.0066                            0        10
+  E1_baja      16      worst frag_externa_prom                     0.1424                            0        10
+  E1_baja      16      worst  utilizacion_prom                    -0.0061                            0        10
+ E2_media       1       best      tasa_rechazo                    -0.0070                           10        10
+ E2_media       1       best frag_externa_prom                    -0.0372                           10        10
+ E2_media       1       best  utilizacion_prom                     0.0096                           10        10
+ E2_media       1      worst      tasa_rechazo                     0.0190                            0        10
+ E2_media       1      worst frag_externa_prom                     0.1270                            0        10
+ E2_media       1      worst  utilizacion_prom                    -0.0243                            0        10
+ E2_media       4       best      tasa_rechazo                    -0.0084                           10        10
+ E2_media       4       best frag_externa_prom                    -0.0440                           10        10
+ E2_media       4       best  utilizacion_prom                     0.0097                           10        10
+ E2_media       4      worst      tasa_rechazo                     0.0204                            0        10
+ E2_media       4      worst frag_externa_prom                     0.1294                            0        10
+ E2_media       4      worst  utilizacion_prom                    -0.0233                            0        10
+ E2_media      16       best      tasa_rechazo                    -0.0041                            7        10
+ E2_media      16       best frag_externa_prom                    -0.0550                           10        10
+ E2_media      16       best  utilizacion_prom                     0.0069                            9        10
+ E2_media      16      worst      tasa_rechazo                     0.0114                            0        10
+ E2_media      16      worst frag_externa_prom                     0.1242                            0        10
+ E2_media      16      worst  utilizacion_prom                    -0.0188                            0        10
+  E3_alta       1       best      tasa_rechazo                    -0.0085                            8        10
+  E3_alta       1       best frag_externa_prom                    -0.0399                           10        10
+  E3_alta       1       best  utilizacion_prom                     0.0172                           10        10
+  E3_alta       1      worst      tasa_rechazo                     0.0178                            0        10
+  E3_alta       1      worst frag_externa_prom                     0.0922                            0        10
+  E3_alta       1      worst  utilizacion_prom                    -0.0349                            0        10
+  E3_alta       4       best      tasa_rechazo                    -0.0046                            9        10
+  E3_alta       4       best frag_externa_prom                    -0.0471                           10        10
+  E3_alta       4       best  utilizacion_prom                     0.0184                           10        10
+  E3_alta       4      worst      tasa_rechazo                     0.0181                            0        10
+  E3_alta       4      worst frag_externa_prom                     0.1047                            0        10
+  E3_alta       4      worst  utilizacion_prom                    -0.0334                            0        10
+  E3_alta      16       best      tasa_rechazo                     0.0013                            4        10
+  E3_alta      16       best frag_externa_prom                    -0.0580                           10        10
+  E3_alta      16       best  utilizacion_prom                     0.0114                           10        10
+  E3_alta      16      worst      tasa_rechazo                     0.0062                            1        10
+  E3_alta      16      worst frag_externa_prom                     0.1058                            0        10
+  E3_alta      16      worst  utilizacion_prom                    -0.0196                            0        10

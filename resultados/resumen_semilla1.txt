@@ -1,0 +1,18 @@
+
+Escenario: E1_baja | memoria 256 KB | unidad 1 KB | 5000 eventos | semilla 1, tamaños 4-40 KB, vivos objetivo 4
+Estrategia     Asignadas Rech.frag  Rech.esp  %Rechazo Util.prom FExt.prom FInt.prom  Rel.huec Rev.exito
+Primer ajuste       2477        23         1     0.96%    36.72%    0.240    0.00KB     0.721      4.17
+Mejor ajuste        2475        26         0     1.04%    36.64%    0.233    0.00KB     0.718      6.14
+Peor ajuste         2465        34         2     1.44%    36.28%    0.406    0.00KB     0.755      6.35
+
+Escenario: E2_media | memoria 256 KB | unidad 1 KB | 5000 eventos | semilla 1, tamaños 4-40 KB, vivos objetivo 8
+Estrategia     Asignadas Rech.frag  Rech.esp  %Rechazo Util.prom FExt.prom FInt.prom  Rel.huec Rev.exito
+Primer ajuste       2228       250        25    10.99%    57.14%    0.419    0.00KB     0.601      5.95
+Mejor ajuste        2259       200        44     9.75%    57.97%    0.381    0.00KB     0.586      9.88
+Peor ajuste         2194       294        15    12.35%    54.99%    0.554    0.00KB     0.632     10.20
+
+Escenario: E3_alta | memoria 256 KB | unidad 1 KB | 5000 eventos | semilla 1, tamaños 4-40 KB, vivos objetivo 13
+Estrategia     Asignadas Rech.frag  Rech.esp  %Rechazo Util.prom FExt.prom FInt.prom  Rel.huec Rev.exito
+Primer ajuste       1843       575        88    26.46%    68.52%    0.515    0.00KB     0.546      7.49
+Mejor ajuste        1869       485       152    25.42%    71.44%    0.476    0.00KB     0.516     12.78
+Peor ajuste         1790       690        26    28.57%    65.09%    0.622    0.00KB     0.585     13.37
