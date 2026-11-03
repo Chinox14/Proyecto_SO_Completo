@@ -1,0 +1,24 @@
+# Caso de prueba 2 — ejemplo de los apuntes del profesor (asignación contigua)
+# "Huecos de 15, 4, 20 y 13 KiB; petición de 12 KiB"
+# Configuración: memoria total = 100 KB, unidad = 1 KB
+#
+# Paso 1: se llena la memoria (15+1+4+1+20+1+13+45 = 100 KB)
+A 1 15
+A 2 1
+A 3 4
+A 4 1
+A 5 20
+A 6 1
+A 7 13
+A 8 45
+# Paso 2: se liberan P1, P3, P5 y P7 -> huecos de 15, 4, 20 y 13 KB
+L 1
+L 3
+L 5
+L 7
+# Paso 3: petición de 12 KB
+A 9 12
+# Resultado esperado (coincide con los apuntes):
+#   Primer ajuste (First Fit) -> hueco de 15 (inicio 0),  sobra 3
+#   Mejor ajuste  (Best Fit)  -> hueco de 13 (inicio 42), sobra 1
+#   Peor ajuste   (Worst Fit) -> hueco de 20 (inicio 21), sobra 8

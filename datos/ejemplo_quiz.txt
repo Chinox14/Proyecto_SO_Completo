@@ -1,0 +1,21 @@
+# Caso de prueba 1 — reproduce la pregunta 1 del quiz de la Fase 1
+# Configuración: memoria total = 100 KB, unidad = 1 KB
+#
+# Paso 1: se llena la memoria con 6 procesos (12+5+50+5+20+8 = 100 KB)
+A 1 12
+A 2 5
+A 3 50
+A 4 5
+A 5 20
+A 6 8
+# Paso 2: se liberan P1, P3 y P5 -> quedan huecos de 12, 50 y 20 KB
+# (no se unen porque P2, P4 y P6 los separan)
+L 1
+L 3
+L 5
+# Paso 3: llega una solicitud de 18 KB
+A 7 18
+# Resultado esperado:
+#   First Fit -> hueco de 50 (inicio 17), sobra 32
+#   Best Fit  -> hueco de 20 (inicio 72), sobra 2
+#   Worst Fit -> hueco de 50 (inicio 17), sobra 32
